@@ -3,257 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Tic-Tac-Toe Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="nav-logo border">
-          <div class="logo"></div>
-        </div>
-        <div class="address">
-          <p class="add1">Deliver to</p>
-          <div class="add-icon">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="add2">India</p>
-          </div>
-        </div>
-        <div class="search">
-          <select clss="search-select">
-            <option value="">All</option>
-          </select>
-          <input type="text" placeholder="Search amazon" class="Search-input" />
-          <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-        <div class="nav-signin border">
-          <p><span>hello, sign in</span></p>
-          <p class="nav-second">Account & Lists</p>
-        </div>
-        <div class="nav-return border">
-          <p><span>Return goods</span></p>
-          <p class="nav-second">with order</p>
-        </div>
-        <div class="navcart border">
-          <i class="fa-solid fa-cart-shopping"></i>
-          cart
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panelall" style="font-size: 1.5rem">
-          <i class="fa-solid fa-bars" style="font-size: 1.5rem"></i>
-          All
-        </div>
-        <div class="panel-ops">
-          <p>Today's Deals</p>
-          <p>Customer Service</p>
-          <p>Registry</p>
-          <p>Gift Cards</p>
-          <p>Sell</p>
-        </div>
-        <div class="panel-deals">Shope deals in electronic</div>
-      </div>
-    </header>
-    <div class="hero-section">
-      <div class="hero-msg">
-        <p>
-          you are on amazon.com. you can also shop on amazon india for millions
-          of products with fast local delivery.
-          <a> Click here to go to amazon.in</a>
-        </p>
-      </div>
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
     </div>
-    <div class="shop-section">
-      <div class="box1 box">
-        <div class="box-content">
-          <h2>Health & personal care</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.1.jpg')"
-          ></div>
-          <p>See more</p>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
         </div>
       </div>
-      <div class="box2 box">
-        <div class="box-content">
-          <h2>Gaming tools</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.2.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box3 box">
-        <div class="box-content">
-          <h2>Fytnesh gym tools</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.3.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box4 box">
-        <div class="box-content">
-          <h2>All model phones</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.4.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-    </div>
-    <div class="shop-section">
-      <div class="box1 box">
-        <div class="box-content">
-          <h2>furniture's</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.5.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box2 box">
-        <div class="box-content">
-          <h2>laptop & computer</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.6.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box3 box">
-        <div class="box-content">
-          <h2>water bottel's</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.7.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box4 box">
-        <div class="box-content">
-          <h2>mobile phone cover's</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.8.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-    </div>
-    <div class="shop-section">
-      <div class="box1 box">
-        <div class="box-content">
-          <h2>Electronic tools</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.9.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box2 box">
-        <div class="box-content">
-          <h2>E-Cycles</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.10.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box3 box">
-        <div class="box-content">
-          <h2>shoes adn slipler's</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.12.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-      <div class="box4 box">
-        <div class="box-content">
-          <h2>Books</h2>
-          <div
-            class="box-img"
-            style="background-image: url('img/box.11.jpg')"
-          ></div>
-          <p>See more</p>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="foot-panel1">Back to top</div>
-
-      <div class="foot-panel2">
-        <ul>
-          <p>Get to Know Us</p>
-          <a>Careers</a>
-          <a>Blog</a>
-          <a>About Amazon</a>
-          <a>Investor Relations</a>
-          <a>Amazon Devices</a>
-          <a>Advertise Your Products</a>
-        </ul>
-        <ul>
-          <p>Make Money with Us</p>
-          <a>Sell on Amazon Business</a>
-          <a>Sell apps on Amazon</a>
-          <a>Become an Affiliate</a>
-          <a>Investor Relations</a>
-          <a>Advertise Your Products</a>
-          <a>Self-Publish with Us</a>
-        </ul>
-        <ul>
-          <p>Amazon Payment Products</p>
-          <a>Amazon Business Card</a>
-          <a>Shop with Points</a>
-          <a>Reload Your Balance</a>
-          <a>Investor Relations</a>
-          <a>Amazon Currency Converter</a>
-        </ul>
-        <ul>
-          <p>Let Us Help You</p>
-          <a>CareersAmazon and COVID-19Blog</a>
-          <a>Your Account</a>
-          <a>Your Orders</a>
-          <a>Shipping Rates & Policies</a>
-          <a>Returns & Replacements</a>
-          <a>Manage Your Content and Devices</a>
-          <a>Amazon Assistant</a>
-        </ul>
-      </div>
-      <div class="foot-panel3">
-        <div class="logo2"></div>
-      </div>
-      <div class="foot-panel4">
-        <div class="pages">
-          <a>Condition of Use</a>
-          <a>Privacy Notice</a>
-          <a>Your Ads privacy Choices</a>
-        </div>
-        <!-- <br /> -->
-        <div class="copyright">
-          © 1996-2024, Amazon.com, Inc. or its affiliates
-        </div>
-      </div>
-    </footer>
+      <button id="reset-btn">Reset Game</button>
+    </main>
+    <script src="main.js"></script>
   </body>
 </html>
